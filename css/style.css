@@ -1,0 +1,427 @@
+/*
+Theme Name: Arke Child
+Theme URL: https://wordpress.org/themes/arke/
+Description: Arke Child Theme
+Author: Lucy Bowe
+Author URL: https://nd2a.com
+Template: arke
+Version: 1.2.1
+Text Domain: arke-child
+*/
+
+/* Basic Styles */
+	body {
+		margin: 0;
+		font-family: 'Open Sans', sans-serif;
+	}
+	h1 {
+		font-size: 32px;
+		margin: 0; padding: 0;
+	}
+	h2 {
+		font-size:28px;
+		margin: 0; padding: 0;
+	}
+	h3 {
+		font-size: 26px;
+		margin: 0; padding: 0;
+	}
+	h4 {
+		font-size: 20px;
+		margin: 0; padding: 0;
+	}
+	p {
+		font-size: 16px;
+		color: #666;
+		margin: 0; padding: 0;
+		line-height:23.8px;
+	}
+	a {
+	    text-decoration: none;
+	    color: #2ea3f2;;
+		margin: 0; padding: 0;
+	}
+	a:hover {
+		font-weight: 600
+	}
+	.inline-block {
+		display:inline-block;
+	}
+	.site-content {
+		max-width: 1080px;
+		display:block;
+		margin:auto;
+	}
+	.content-area {
+		padding: 0 20px;
+	}
+	.cf:before,
+	.cf:after {
+	    content: " ";
+	    display: table;
+	}
+	.cf:after {
+	    clear: both;
+	}
+	.alignright {
+	    float: right;
+	    display: inline-block;
+	}
+	.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.entry-content img, .entry-content figure {
+	    max-width: 100%;
+	    height: auto;
+	    margin: auto;
+	}
+/* End Basic Styles */
+
+
+/* Header Styles */
+	.site-header {
+		padding: 10px 0 0px 0;
+		position: relative;
+	    z-index: 99999;
+	    top: 0;
+	    width: 100%;
+	    background-color: #fff;
+	    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	    -moz-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	    font-weight: 500;
+	    line-height: 23px;
+	}
+	.header-limitor {
+		max-width: 1080px;
+		display:block;
+		margin:auto;
+   		padding: 0 20px;
+	}
+	.header-limitor h1 {
+		width: 300px;
+	}
+	.site-header img {
+		max-width: 300px;
+	}
+	.sub-menu {
+	    display: none;
+		position: absolute;
+	    background-color: #fff;
+	    border: 1px solid rgba(0,0,0,.1);
+		padding: 10px;
+		list-style:none;
+		text-align:left;
+	}
+	.sub-menu li {
+	    padding: 5px 10px;
+	}
+	#site-menu > .menu-item {
+		display: inline-block;
+		padding: 0 10px;
+	}
+	#site-menu > .menu-item:first-child {
+		padding-left: 0;
+	}
+	#site-menu > .menu-item:last-child {
+		padding-right: 0;
+	}
+	.menu-item:hover .sub-menu {
+		display:block;
+	}
+	#site-navigation {
+	    width: CALC( 100% - 305px );
+	    text-align: right;
+	    vertical-align: top;
+	}
+	.header-limitor #site-menu {
+		padding: 0;
+		list-style:none;
+	}
+	.tax-wpsl_store_category .entry-title {
+		padding: 50px 0 20px 0
+	}
+	.single-wpsl_stores .entry-title {
+		padding: 30px 0 20px 0
+	}
+	@media ( max-width: 775px ) {
+		#site-navigation {
+		    display: block;
+		    margin: auto;
+		    width: auto;
+		    text-align: center;
+		}
+		.site-header img {
+		    display: block;
+		    margin: auto;
+		}
+	}
+	@media ( max-width: 330px ) {
+		.site-header img {
+		   	max-width:100%;
+		}
+	}
+/* End Header Styles */
+
+/* Banner Section Styles */
+	.banner {
+		background-image: url(/img/girl.jpg);
+	    -webkit-background-size: 100%;
+	    -webkit-background-size: cover;
+	    -moz-background-size: 100%;
+	    -moz-background-size: cover;
+	    background-size: 100%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    padding: 60px 0;
+	    width: 100%;
+	}
+	.banner.dark {
+		background-image:unset;
+		background-color: #FFF
+	}
+	.banner.dark h2 {
+		color: #de1b1b;
+	}
+	.banner.hold-hands {
+		background-image: url(/img/hold-hands.jpg);
+		background-position-y: top;
+	}
+	.banner.sparkler {
+		background-image: url(/img/girl-with-sparkler.jpg);
+	}
+	.inner-banner {
+		max-width: 1080px;
+		background-color: #191919;
+		display:block;
+		text-align:center;
+		padding: 30px;
+		margin:auto;
+	}
+	.inner-banner p, .inner-banner h1, .inner-banner h2, .inner-banner h3 {
+		padding-bottom: 15px;
+		color: #fff;
+	}
+	article .inner-banner p, article .inner-banner h1, article .inner-banner h2, article .inner-banner h3 {
+		padding-top: 5px;
+	}
+	.inner-banner img {
+		padding-top: 5px;
+	}
+	.et_pb_button {
+	    font-size: 20px;
+	    font-weight: 500;
+	    display: inline-block;
+	    color: inherit;
+	    position: relative;
+	    padding: .3em 1em;
+	    border: 2px solid;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    background-color: transparent;
+	    line-height: 1.7em!important;
+	    -webkit-transition: all .2s;
+	    -moz-transition: all .2s;
+	    transition: all .2s;
+	    color: #fff;
+	}
+	.et_pb_button:after, .et_pb_button:before {
+	    margin-left: -1em;
+	    opacity: 0;
+	    text-shadow: none;
+	    font-size: 32px;
+	    font-weight: 400;
+	    font-style: normal;
+	    font-variant: none;
+	    line-height: 1em;
+	    text-transform: none;
+	    content: "\00a0\203A";
+	    -webkit-transition: all .2s;
+	    -moz-transition: all .2s;
+	    transition: all .2s;
+	}
+	.et_pb_button:hover:after {
+	    margin-left: 0;
+	    opacity: 1;
+	}
+	.et_pb_button:hover {
+    	background: #de1b1b;
+    	border: 2px solid transparent;
+    	padding: .3em 1em .3em 1.6em;
+	}
+	.dark .et_pb_button {
+	    background-color: #de1b1b;
+	}
+/* End Banner Section Styles */
+
+/* Need to Know Panel Styles */
+	.need-to-know {
+	    padding-top: 50px;
+	}
+	.need-to-know h2 {
+	    padding-bottom: 10px;
+	}
+	.need-to-know-block-holder {
+		display:block;
+		margin:auto;
+   		text-align: center;
+	}
+	.need-to-know-block {
+		width: CALC( 25% - 44px );
+		padding: 50px 20px 20px 20px;
+		min-width: 200px;
+		vertical-align:top;
+		text-align:center;
+	}
+	.need-to-know-block img {
+		display: block;
+		margin: auto;
+	}
+	@media ( max-width: 600px ) {
+		.need-to-know img {
+			width: 100px;
+		}
+	}
+	@media ( max-width: 330px ) {
+		.need-to-know-block img {
+		   	max-width:100%;
+		}
+	}
+/* End Need to Know Panel Styles */
+
+/* About Section Styles */
+	.about {
+		padding-top: 50px;
+	}
+	.about h2 {
+		padding-bottom: 5px;
+		padding-top: 20px;
+	}
+/* End About Section Styles */
+
+/* Content Pages Styles */
+	.entry-title {
+		padding: 100px 0 20px 0;
+		text-align:center;
+	}
+	.entry-content p {
+	    padding: 5px 20px;
+	}
+	.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4 {
+	    padding: 20px 0 5px 0;
+	}
+/* End Content Pages Styles */
+
+/* Footer Styles */
+	footer {
+		margin-top: 50px;
+		background: #191919;
+	}
+	.sub-footer {
+		color: #fff;
+		max-width: 1080px;
+		display:block;
+		margin:auto;
+		padding: 20px;
+	}
+	.sub-footer p {
+		display: inline-block;
+	}
+	.sub-footer a {
+		display: inline-block;
+		float: right
+	}
+	.sub-footer a:before {
+	    content: "\00a0|\00a0";
+	}
+	.sub-footer a:last-child:before {
+	    content: "";
+	}
+	@media ( max-width: 440px ) {
+		.sub-footer p, .sub-footer a {
+			display:block;
+			margin:auto;
+			text-align:center;
+			float:unset;
+		}
+		.sub-footer a:before {
+		    content: "";
+		}
+	}
+/* End Footer Styles */
+
+/* Post Styles */
+	article .entry-title {
+	    padding-top: 50px;
+	}
+	article img {
+	    max-width:100%
+	}
+/* End Post Styles */
+
+/* iFrame Styles */
+	iframe {
+	    height: 600px;
+	    width: 100%;
+	    border: 1px solid;
+	}
+	@media (max-width:600px) {
+		iframe {
+		    width: 100vw;
+		    margin-left: -40px;
+		}
+	}
+/* End iFrame Styles */
+
+/* Blog Styles */
+	article.blog-article {
+		margin-bottom:50px;
+	}
+/* End Blog Styles */
+
+
+
+/* Blur */
+.blur-parent {
+	position: relative;
+	overflow:hidden;
+}
+
+.after-blur {
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #0000004f;
+    color: #FFF;
+    display: table;
+    height: 100%;
+    width: 100%;
+	cursor:pointer;
+	-webkit-transition: all .5s; /* Safari */
+  	transition: all .5s;
+}
+
+.after-blur-text {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.blur {
+    filter: blur(15px) grayscale(1);
+    -webkit-filter: blur(15px) grayscale(1);
+    -moz-filter: blur(15px) grayscale(1);
+    -o-filter: blur(15px) grayscale(1);
+    -ms-filter: blur(15px) grayscale(1);
+	-webkit-transition: all .5s; /* Safari */
+  	transition: all .5s;
+}
+/* End Blur */
